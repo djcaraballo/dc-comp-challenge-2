@@ -86,8 +86,125 @@ h2 {
   grid-row: 3/4;
   display: grid;
   grid-auto-flow: row;
+  grid-gap: .75rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.card {
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  /*box-shadow: 1px darkgray;*/
+    position:relative;
+    -webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.card:before, .card:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.card:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.grid-card-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.grid-card-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.grid-card-3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.grid-card-4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.grid-card-5 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.grid-card-6 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.grid-card-7 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.grid-card-8 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.card-grid-box {
+
+}
+
+.grid-box-1 {
+  background-image: url("images/phoenix.jpg");
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.arrow-button {
+  height: 4em;
+  grid-column: 1/2;
+}
+
+.views-container {
+  grid-column: 2/3;grid-column: 2/3;
+  color: #FFFFFF;
+  text-align: end;
+}
+
+.grid-box-2 {
+
+}
+
+.grid-box-3 {
+
+}
+
+.grid-box-4 {
+
+}
+
+.grid-box-5 {
+
 }
 
 

@@ -1,17 +1,65 @@
 /*WRAP ALL GRID STYLING*/
 .wrap-all {
+  align-content: stretch;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: (repeat 2, 1fr) auto;
   grid-gap: 0;
   justify-content: stretch;
-  align-content: stretch;
 }
 
+/*HEADER STYLING*/
 header {
   /*add grid 1 row 2 columns*/
+  background-color: #000000;
+  color: #B4A078;
+  display: grid;
   grid-column: 1/2;
+  grid-gap: 2rem;
   grid-row: 1/2;
+  grid-template-columns: 3.5fr 1fr;
+  grid-template-rows: 3fr;
+}
+
+.icon {
+  height: 1.1em;
+  margin-left: 1.5em;
+  margin-right: .4em;
+  margin-top: 1em;
+  margin-bottom: 1.1em;
+}
+
+nav,
+.logo-container {
+  display: flex;
+  grid-row: 1/2;
+}
+
+nav {
+  align-items: flex-end;
+  grid-column: 1/2;
+}
+
+.logo-container {
+  grid-column: 2/3;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr, 1fr; 
+  justify-content: flex-end;
+}
+
+.logo-icon {
+  height: 6em;
+  grid-row: 2/3;
+}
+
+.admin-container {
+  display: flex;
+  grid-row: 1/2;
+}
+
+.menu-icon {
+  margin: 1rem;
 }
 
 h2 {
@@ -19,12 +67,14 @@ h2 {
   grid-row: 2/3;
 }
 
+/*MAIN GRID STYLING*/    
 .grid-wrap {
   /*add grid 2 rows by 4 columns - make sure to use autoflow*/
   grid-column: 1/2;
   grid-row: 3/4;
 }
 
-/*HEADER STYLING*/
 
-/*MAIN GRID STYLING*/
+
+
+

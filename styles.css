@@ -1,3 +1,7 @@
+* {
+  font-family: 'Play', sans-serif;
+}
+
 /*WRAP ALL GRID STYLING*/
 .wrap-all {
   align-content: stretch;
@@ -63,15 +67,162 @@ nav {
 }
 
 h2 {
+  background-color: #E8EAE7;
+  color: #726F6F;
+  font-family: "Arimo", sans-serif;
+  font-size: 3em;
+  font-weight: 400;
   grid-column: 1/2;
   grid-row: 2/3;
+  margin: 0;
+  padding: 2rem 0.75rem;
 }
 
 /*MAIN GRID STYLING*/    
 .grid-wrap {
+  background-color: #E8EAE7;
   /*add grid 2 rows by 4 columns - make sure to use autoflow*/
   grid-column: 1/2;
   grid-row: 3/4;
+  display: grid;
+  grid-auto-flow: row;
+  grid-gap: .75rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 0.75em;
+}
+
+.card {
+  background: #FFFFFF;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
+  /*box-shadow: 1px darkgray;*/
+    position:relative;
+    -webkit-box-shadow:0 1px 4px #000000, 0 0 40px #FFFFFF inset;
+       -moz-box-shadow:0 1px 4px #000000, 0 0 40px #FFFFFF inset;
+            box-shadow:0 1px 4px #000000, 0 0 40px #FFFFFF inset;
+}
+.card:before, .card:after
+{
+    content:"";
+    position:absolute;
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px #000000;
+    -moz-box-shadow:0 0 20px #000000;
+    box-shadow:0 0 20px #000000;
+    top:10px;
+    bottom:10px;
+    left:0;
+    right:0;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+}
+.card:after
+{
+    right:10px;
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg);
+       -moz-transform:skew(8deg) rotate(3deg);
+        -ms-transform:skew(8deg) rotate(3deg);
+         -o-transform:skew(8deg) rotate(3deg);
+            transform:skew(8deg) rotate(3deg);
+}
+
+.grid-card-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.grid-card-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.grid-card-3 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.grid-card-4 {
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.grid-card-5 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.grid-card-6 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.grid-card-7 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.grid-card-8 {
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.card-grid-box {
+  margin: 0 1rem;
+}
+
+.grid-box-1 {
+  background-image: url("images/phoenix.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+}
+
+.arrow-button {
+  height: 4em;
+  grid-column: 1/2;
+  margin: 1em;
+}
+
+.views-container {
+  grid-column: 2/3;
+  color: #FFFFFF;
+  padding-right: 1em;
+  text-align: end;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0;
+}
+
+.views-p,
+.playlist-p,
+.attachments-p {
+  margin-bottom: 0.25em;
+  font-size: 0.8em;
+}
+
+.grid-box-2 {
+
+}
+
+.grid-box-3 {
+  background-color: #E8EAE7;
+  padding: 0 1em;
+}
+
+.grid-box-4 {
+
+}
+
+.grid-box-5 {
+
 }
 
 
